@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.input {
+  @apply w-full pr-10 pl-3 py-2.5 rounded-xl
+  bg-gray-50 border border-gray-200
+  text-sm text-gray-700 outline-none
+
+  focus:bg-white
+  focus:border-blue-400
+  focus:ring-2 focus:ring-blue-100
+
+  transition;
+}
+
+.form-input {
+  width: 100%;
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.875rem;
+  padding: 0.75rem 3rem 0.75rem 1rem;
+  font-size: 0.875rem;
+  outline: none;
+  transition: all 0.2s;
+}
+
+.form-input:focus {
+  background: white;
+  border-color: #93c5fd;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.form-input:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
